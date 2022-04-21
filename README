@@ -1,0 +1,6 @@
+This project requires anaconda with python version 3.9.7
+
+qiskit
+pennylane
+pennylane-qiskit
+pytorch
