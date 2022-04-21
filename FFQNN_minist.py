@@ -136,6 +136,7 @@ train_loader = torch.utils.data.DataLoader(X_train, batch_size=1, shuffle=True)
 n_samples_show = 6
 
 data_iter = iter(train_loader)
+"""
 fig, axes = plt.subplots(nrows=1, ncols=n_samples_show, figsize=(10, 3))
 
 while n_samples_show > 0:
@@ -147,6 +148,7 @@ while n_samples_show > 0:
     axes[n_samples_show - 1].set_title("Labeled: {}".format(targets.item()))
     
     n_samples_show -= 1
+"""
 
 n_samples = 50
 
@@ -254,7 +256,7 @@ with torch.no_grad():
 
 n_samples_show = 6
 count = 0
-fig1, axes1 = plt.subplots(nrows=1, ncols=n_samples_show, figsize=(10, 3))
+fig, axes = plt.subplots(nrows=1, ncols=n_samples_show, figsize=(10, 3))
 
 
 model_sim.eval()
